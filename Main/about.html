@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=PermanentMarker">
+    <meta charset="utf-8">
+    <title>Gaurav Freelancing Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  </head>
+   <body>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<header class="header">
+  <nav class="navbar">
+      <a href="#" class="nav-logo"><b>Gaurav </b></a>
+      <ul class="nav-menu">
+          <li class="nav-item">
+              <a href="http://sunrisetech.unaux.com/" class="nav-link"><b>Home</b></a>
+          </li>
+          <li class="nav-item">
+              <a href="Main/course.html" class="nav-link"><b>Courses</b></a>
+          </li>
+          <li class="nav-item">
+              <a href="#" class="nav-link"><b>About</b></a>
+          </li>
+          <li class="nav-item">
+              <a href="Main/contact.html" class="nav-link"><b>Contact</b></a>
+          </li>
+      </ul>
+      <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+  </nav>
+</header>
+
+
+<script>
+    
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+  const navLink = document.querySelectorAll(".nav-link");
+  
+  hamburger.addEventListener("click", mobileMenu);
+  navLink.forEach(n => n.addEventListener("click", closeMenu));
+  
+  function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+  }
+  
+  function closeMenu() {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+  }
+  
+        </script>
+
+        
+            
+</body>
+</head>
+</html>
